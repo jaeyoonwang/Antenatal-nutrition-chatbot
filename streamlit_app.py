@@ -21,7 +21,7 @@ def rerun_app():
     st.experimental_rerun()
 
 
-st.set_page_config(page_title="Antenatal Nutrition Chatbot", layout="wide")
+st.set_page_config(page_title="Antenatal Nutrition Chatbot 🤱🏻", layout="wide")
 
 st.markdown(
   """
