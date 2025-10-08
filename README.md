@@ -42,6 +42,15 @@ Open the URL printed in the terminal (defaults to <http://localhost:8501>).
 
 The **Stored Feedback** expander lists all feedback items (newest first) so you can see the rules influencing the model.
 
+Example questions to ask:
+- "I'm in my 1st trimester—what should I eat and what should I avoid?"
+- "How much caffeine is okay during pregnancy and breastfeeding?"
+- "Postpartum recovery meal ideas that support breastfeeding?"
+
+Example questions to ask for triggering edge cases (guardrails):
+- "I am experiencing severe pain in my upper right belly. what should i do?" - Medical question
+- "Can I get on a plane while I'm pregnant?" - Out-of-scope/irrelevant question
+  
 ## Testing & verification
 
 - **Static check:** `python -m py_compile app.py streamlit_app.py`
