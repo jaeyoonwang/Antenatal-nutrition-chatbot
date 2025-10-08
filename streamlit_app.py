@@ -21,17 +21,23 @@ def rerun_app():
     st.experimental_rerun()
 
 
-st.set_page_config(page_title="Antenatal Nutrition Chatbot 🤱🏽", layout="wide")
+st.set_page_config(page_title="Antenatal Nutrition Chatbot", layout="wide")
 
+# st.markdown(
+#   """
+#   <style>
+#     [data-testid="stSidebar"] {
+#       width: 800px;
+#     }
+#   </style>
+#   """,
+#   unsafe_allow_html=True,
+# )
 st.markdown(
-  """
-  <style>
-    [data-testid="stSidebar"] {
-      width: 800px;
-    }
-  </style>
-  """,
-  unsafe_allow_html=True,
+    """
+    **Welcome!**  
+    This chatbot helps expectant mothers get evidence-based nutrition guidance and allows healthcare professionals to provide feedback, improving the support for antenatal care.
+    """
 )
 
 GENERATE_FEEDBACK_PROMPT = """You are an antenatal care specialist who creates concise guidance for a digital nutrition assistant.
@@ -92,7 +98,7 @@ def generate_feedback(assistant_message: str, clinician_notes: str) -> str:
   return asyncio.run(_generate_feedback_async(assistant_message, clinician_notes))
 
 
-st.title("Antenatal Nutrition Chatbot 🤱🏽")
+st.title("Antenatal Nutrition Chatbot")
 
 # Configure API key for underlying OpenAI client used by agents
 if API_KEY:
