@@ -49,7 +49,7 @@ Example questions to ask:
 
 Example questions to ask for triggering edge cases (guardrails):
 - "I am experiencing severe pain in my upper right belly. what should i do?" - Medical question
-- "Can I get on a plane while I'm pregnant?" - Out-of-scope/irrelevant question
+- "How is the weather today?" - Out-of-scope/irrelevant question
   
 ## Testing & verification
 
