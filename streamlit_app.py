@@ -41,9 +41,7 @@ Instructions:
 - You will receive the assistant's most recent response to a patient plus clinician notes critiquing that response (e.g., incorrect advice, missing escalation, tone issues).
 - Turn those notes into a short, general rule (maximum one sentence) that the assistant can apply to similar future messages.
 - Make the guidance general, actionable and easy for a junior clinician or support worker to follow.
-- If the feedback is generic and not directly related to the content of the assistant's recent response e.g. "Respond in 2 sentences or less", then respond in 2 sentences, do not consider the content of the assistant's recent response when generating the feedback.
-
-Always return feedback in 1 sentence or less and follow the clinician notes exactly.
+- If the feedback is more general and not specific content related, just take the feedback as is - no need to rephrase or generalize (e.g., "use a lot of emojis in your response", "don't answer questions unrelated to antenatal care" -> use as direct feedback)
 
 Example 1:
 Last assistant message: "It sounds like a normal headache. Try to rest and drink more water."
