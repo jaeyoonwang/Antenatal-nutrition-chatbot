@@ -23,22 +23,17 @@ def rerun_app():
 
 st.set_page_config(page_title="Antenatal Nutrition Chatbot", layout="wide")
 
-# st.markdown(
-#   """
-#   <style>
-#     [data-testid="stSidebar"] {
-#       width: 800px;
-#     }
-#   </style>
-#   """,
-#   unsafe_allow_html=True,
-# )
 st.markdown(
-    """
-    **Welcome!**  
-    This chatbot helps expectant mothers get evidence-based nutrition guidance and allows healthcare professionals to provide feedback, improving the support for antenatal care.
-    """
+  """
+  <style>
+    [data-testid="stSidebar"] {
+      width: 800px;
+    }
+  </style>
+  """,
+  unsafe_allow_html=True,
 )
+
 
 GENERATE_FEEDBACK_PROMPT = """You are an antenatal care specialist who creates concise guidance for a digital nutrition assistant.
 
@@ -67,7 +62,7 @@ Feedback: "Keep responses concise; always respond in 2 sentences or less"
 """
 
 GPT_FEEDBACK_MODEL = "gpt-5-mini"
-DEFAULT_FEEDBACK = "When asked about medical questions or emergency ONLY, prompt the user to wait until we connect them to a healthcare professional. Do NOT prompt this for general nutrition questions."
+DEFAULT_FEEDBACK = "Maintain a kind and friendly tone."
 
 feedback_client = AsyncOpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
