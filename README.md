@@ -1,6 +1,6 @@
-# Antenatal Nutrition Chatbot
+# Antenatal Nutrition Chatbot for Deployment in Low-resource Settings
 
-Streamlit application that lets you demo an antenatal nutrition assistant, manually take over the conversation as a healthcare professional in cases of concerning medical emergency, and capture reusable clinically accurate feedback that shapes future model responses.
+Streamlit application that lets you demo an antenatal nutrition assistant for low-resource settings, manually take over the conversation as a healthcare professional in cases of concerning medical emergency, and capture reusable clinically accurate feedback that shapes future model responses.
 
 ## Hosted App
 
